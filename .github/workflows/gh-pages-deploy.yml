@@ -35,13 +35,8 @@ jobs:
         run: rustup target add wasm32-unknown-unknown
 
 
-      # If using tailwind...
-      # - name: Download and install tailwindcss binary
-      #   run: npm install -D tailwindcss && npx tailwindcss -i <INPUT/PATH.css> -o <OUTPUT/PATH.css>  # run tailwind
-
-
       - name: Install Trunk
-        run: cargo binstall trunk
+        run: cargo install trunk
 
       - name: Build with Trunk
         # "${GITHUB_REPOSITORY#*/}" evaluates into the name of the repository
