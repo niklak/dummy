@@ -41,7 +41,7 @@ jobs:
 
 
       - name: Install Trunk
-        run: cargo binstall trunk
+        run: cargo binstall trunk -y
 
       - name: Build with Trunk
         # "${GITHUB_REPOSITORY#*/}" evaluates into the name of the repository
